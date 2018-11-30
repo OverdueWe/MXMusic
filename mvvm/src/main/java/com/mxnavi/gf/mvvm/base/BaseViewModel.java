@@ -4,7 +4,7 @@ import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.support.annotation.NonNull;
 
-import com.mxnavi.gf.mvvm.rx.RxManager;
+import com.mxnavi.gf.mvvm.util.TUtil;
 
 /**
  * describle : Base of ViewModel
@@ -13,19 +13,20 @@ import com.mxnavi.gf.mvvm.rx.RxManager;
  * @date 2018.11.30
  */
 
-public class BaseViewModel<T extends RxManager> extends AndroidViewModel {
+public class BaseViewModel<T extends BaseModel> extends AndroidViewModel {
 
-    public T mRxManager;
+    public T mModel;
 
     public BaseViewModel(@NonNull Application application) {
         super(application);
+        mModel = TUtil.getNewInstance(this,0);
     }
 
     @Override
     protected void onCleared() {
         super.onCleared();
-        if (mRxManager != null) {
-            mRxManager.unDisposable();
+        if (mModel != null) {
+            mModel.unDisposable();
         }
     }
 }
