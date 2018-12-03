@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mxnavi.gf.autosize" >
+
+    <application>
+        <provider
+            android:name=".InitProvider"
+            android:authorities="${applicationId}.autosize-init-provider"
+            android:exported="false"/>
+    </application>
+
+</manifest>
