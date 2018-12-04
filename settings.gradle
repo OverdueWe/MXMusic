@@ -1,1 +1,1 @@
-include ':app', ':mvvm', ':autosize'
+include ':app', ':mvvm', ':autosize', ':backstage', ':misc', ':pojo'

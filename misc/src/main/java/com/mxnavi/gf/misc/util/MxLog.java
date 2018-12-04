@@ -1,4 +1,4 @@
-package com.mxnavi.gf.mvvm.util;
+package com.mxnavi.gf.misc.util;
 
 import android.util.Log;
 

@@ -10,7 +10,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/autosize" />
+            <option value="$PROJECT_DIR$/backstage" />
+            <option value="$PROJECT_DIR$/misc" />
             <option value="$PROJECT_DIR$/mvvm" />
+            <option value="$PROJECT_DIR$/pojo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 
 import com.mxnavi.gf.autosize.internal.CustomAdapt;
-import com.mxnavi.gf.mvvm.util.MxLog;
+import com.mxnavi.gf.misc.util.MxLog;
 
 /**
  * describle : Base of Activity
@@ -62,7 +62,6 @@ public abstract class BaseActivity extends AppCompatActivity implements CustomAd
     }
 
     /**
-     * 这里使用 IPhone 的设计图, IPhone 的设计图尺寸为 750px * 1334px, 高换算成 dp 为 667 (1334px / 2 = 667dp)
      * <p>
      * 返回设计图上的设计尺寸, 单位 dp
      * {@link #getSizeInDp} 须配合 {@link #isBaseOnWidth()} 使用, 规则如下:
