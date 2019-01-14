@@ -3,7 +3,7 @@ package com.mxnavi.gf.mxmusic;
 import android.app.Application;
 import android.content.Intent;
 
-import com.mxnavi.gf.backstage.service.MusicService;
+import com.mxnavi.gf.server.service.MusicService;
 
 /**
  * describle : MusicApplication

@@ -35,5 +35,5 @@ android {
         annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
         //autosize 分辨率适配
         implementation project(':autosize')
-        implementation project(':backstage')
+        implementation project(':server')
     }

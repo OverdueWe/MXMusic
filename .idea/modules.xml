@@ -5,10 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/MXMusic.iml" filepath="$PROJECT_DIR$/MXMusic.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/autosize/autosize.iml" filepath="$PROJECT_DIR$/autosize/autosize.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backstage/backstage.iml" filepath="$PROJECT_DIR$/backstage/backstage.iml" />
       <module fileurl="file://$PROJECT_DIR$/misc/misc.iml" filepath="$PROJECT_DIR$/misc/misc.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvvm/mvvm.iml" filepath="$PROJECT_DIR$/mvvm/mvvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/pojo/pojo.iml" filepath="$PROJECT_DIR$/pojo/pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/superui/superui.iml" filepath="$PROJECT_DIR$/superui/superui.iml" />
     </modules>
   </component>
 </project>

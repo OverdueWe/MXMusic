@@ -4,8 +4,12 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by Administrator on 2018/12/4.
+ * 描述 ：网络数据基类
+ *
+ * @author Mark
+ * @date 2018.12.03
  */
+
 
 public class BasePojo implements Parcelable {
 

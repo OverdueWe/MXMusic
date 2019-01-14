@@ -1,1 +1,1 @@
-include ':app', ':mvvm', ':autosize', ':backstage', ':misc', ':pojo'
+include ':app', ':mvvm', ':autosize', ':server', ':misc', ':pojo', ':superui'
