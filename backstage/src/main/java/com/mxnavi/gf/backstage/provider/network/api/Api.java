@@ -5,6 +5,7 @@ import android.content.Context;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.mxnavi.gf.backstage.provider.network.cache.EnhancedCacheInterceptor;
+import com.mxnavi.gf.pojo.api.ApiConstants;
 
 import java.util.concurrent.TimeUnit;
 
@@ -83,7 +84,7 @@ public class Api {
                 .client(mOkHttpClient)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
-//                .baseUrl(ApiConstants.QQMUSIC_BASE_URL)
+                .baseUrl(ApiConstants.BASE_URL)
                 .build();
     }
 

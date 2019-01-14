@@ -3,7 +3,6 @@ package com.mxnavi.gf.backstage.provider.network.cache;
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
-import com.mxnavi.gf.backstage.provider.network.uitl.ApiConstants;
 import com.mxnavi.gf.misc.network.NetUtil;
 import com.mxnavi.gf.misc.util.MxLog;
 
@@ -26,6 +25,12 @@ import retrofit2.Response;
  */
 
 public class EnhancedCall<T> {
+
+    /**
+     * 请求方法POST
+     */
+    private static final String REQUEST_METHOD_POST = "POST";
+
     private Call<T> mCall;
     private Class dataClassName;
     /**
@@ -74,7 +79,7 @@ public class EnhancedCall<T> {
                 Charset charset = Charset.forName("UTF-8");
                 StringBuilder sb = new StringBuilder();
                 sb.append(url);
-                if (ApiConstants.POST.equals(request.method())) {
+                if (REQUEST_METHOD_POST.equals(request.method())) {
                     MediaType contentType = requestBody.contentType();
                     if (contentType != null) {
                         charset = contentType.charset(Charset.forName("UTF-8"));

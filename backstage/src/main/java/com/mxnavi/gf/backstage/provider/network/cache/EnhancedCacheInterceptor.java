@@ -1,7 +1,6 @@
 package com.mxnavi.gf.backstage.provider.network.cache;
 
 import com.mxnavi.gf.backstage.provider.network.exception.ServerException;
-import com.mxnavi.gf.backstage.provider.network.uitl.ApiConstants;
 import com.mxnavi.gf.misc.util.MxLog;
 
 import org.json.JSONException;
@@ -31,6 +30,11 @@ public class EnhancedCacheInterceptor implements Interceptor {
 
     private static final String TAG = "EnhancedCacheInterceptor";
 
+    /**
+     * 请求方法POST
+     */
+    private static final String REQUEST_METHOD_POST = "POST";
+
     @Override
     public Response intercept(Chain chain) {
         Request request = chain.request();
@@ -39,7 +43,7 @@ public class EnhancedCacheInterceptor implements Interceptor {
         Charset charset = Charset.forName("UTF-8");
         StringBuilder sb = new StringBuilder();
         sb.append(httpUrl.toString());
-        if (ApiConstants.POST.equals(request.method())) {
+        if (REQUEST_METHOD_POST.equals(request.method())) {
             MediaType contentType = requestBody.contentType();
             if (contentType != null) {
                 charset = contentType.charset(Charset.forName("UTF-8"));

@@ -1,5 +1,6 @@
 package com.mxnavi.gf.misc.util;
 
+import android.os.AsyncTask;
 import android.util.Log;
 
 /**
@@ -42,6 +43,19 @@ public class MxLog {
     public static void e(String tag, String message) {
         if (debug) {
             Log.e(tag, message);
+        }
+    }
+
+    private static class TestTask extends AsyncTask<Integer,Integer,Integer> {
+
+        @Override
+        protected Integer doInBackground(Integer... integers) {
+            return null;
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            super.onProgressUpdate(values);
         }
     }
 }

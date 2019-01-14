@@ -13,7 +13,6 @@ import com.mxnavi.gf.mvvm.rx.RxManager;
 public class BaseModel extends RxManager {
 
     public BaseModel() {
-
     }
 
     protected void postEvent(Object eventKey, String tag, Object t) {
