@@ -14,6 +14,7 @@ android {
                 cppFlags ""
             }
         }
+        flavorDimensions "default"
     }
     buildTypes {
         release {
@@ -36,4 +37,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':mvvm')
     implementation project(':server')
+    implementation project(':superui')
 }

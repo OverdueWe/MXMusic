@@ -2,11 +2,56 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hello world！"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_main_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:text="empty" />
+
+        <Button
+            android:id="@+id/btn_main_error"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:text="error" />
+
+        <Button
+            android:id="@+id/btn_main_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:text="loading" />
+
+        <Button
+            android:id="@+id/btn_main_success"
+            android:layout_width="wrap_content"
+            android:layout_height="50px"
+            android:layout_gravity="center"
+            android:text="success" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_mian_success"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="30px"
+            android:text="success" />
+    </FrameLayout>
 
 </LinearLayout>
