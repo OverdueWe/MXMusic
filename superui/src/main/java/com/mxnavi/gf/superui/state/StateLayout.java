@@ -42,7 +42,7 @@ public class StateLayout extends FrameLayout {
             try {
                 Constructor constructor = stateView.getConstructor(Context.class);
                 StateView view = (StateView) constructor.newInstance(mContext);
-                mStateViews.put(entry.getKey(),view);
+                mStateViews.put(entry.getKey(), view);
                 view.setRetryOnClickListener(mRetryOnClickListener);
                 view.getRootView().setTag(entry.getKey());
                 addView(view.getRootView());
@@ -54,6 +54,7 @@ public class StateLayout extends FrameLayout {
 
     /**
      * 设置点击回调
+     *
      * @param listener
      */
     protected void setStateOnClickListener(StateManager.StateOnClickListener listener) {
@@ -82,6 +83,9 @@ public class StateLayout extends FrameLayout {
      * 加载StateView
      */
     private void loadStateView(StateManager.State state) {
+        if (currentState == state) {
+            return;
+        }
         currentState = state;
         int childCount = getChildCount();
         for (int i = 0; i < childCount; i++) {
@@ -94,7 +98,7 @@ public class StateLayout extends FrameLayout {
         }
 
         for (Map.Entry<StateManager.State, StateView> entry : mStateViews.entrySet()) {
-            if (state  == entry.getKey()) {
+            if (state == entry.getKey()) {
                 entry.getValue().onAttach();
             } else {
                 entry.getValue().onDettach();
@@ -117,6 +121,7 @@ public class StateLayout extends FrameLayout {
 
     /**
      * 是否在主线程
+     *
      * @return
      */
     private boolean onMainThred() {
