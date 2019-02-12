@@ -9,12 +9,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/autosize" />
-            <option value="$PROJECT_DIR$/misc" />
-            <option value="$PROJECT_DIR$/mvvm" />
-            <option value="$PROJECT_DIR$/pojo" />
-            <option value="$PROJECT_DIR$/server" />
-            <option value="$PROJECT_DIR$/superui" />
+            <option value="$PROJECT_DIR$/mx_autosize" />
+            <option value="$PROJECT_DIR$/mx_misc" />
+            <option value="$PROJECT_DIR$/mx_mvvm" />
+            <option value="$PROJECT_DIR$/mx_pojo" />
+            <option value="$PROJECT_DIR$/mx_server" />
+            <option value="$PROJECT_DIR$/mx_superui" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

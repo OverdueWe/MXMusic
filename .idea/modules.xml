@@ -4,12 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MXMusic.iml" filepath="$PROJECT_DIR$/MXMusic.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/autosize/autosize.iml" filepath="$PROJECT_DIR$/autosize/autosize.iml" />
-      <module fileurl="file://$PROJECT_DIR$/misc/misc.iml" filepath="$PROJECT_DIR$/misc/misc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mvvm/mvvm.iml" filepath="$PROJECT_DIR$/mvvm/mvvm.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pojo/pojo.iml" filepath="$PROJECT_DIR$/pojo/pojo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/superui/superui.iml" filepath="$PROJECT_DIR$/superui/superui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mx_autosize/mx_autosize.iml" filepath="$PROJECT_DIR$/mx_autosize/mx_autosize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mx_misc/mx_misc.iml" filepath="$PROJECT_DIR$/mx_misc/mx_misc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mx_mvvm/mx_mvvm.iml" filepath="$PROJECT_DIR$/mx_mvvm/mx_mvvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mx_pojo/mx_pojo.iml" filepath="$PROJECT_DIR$/mx_pojo/mx_pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mx_server/mx_server.iml" filepath="$PROJECT_DIR$/mx_server/mx_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mx_superui/mx_superui.iml" filepath="$PROJECT_DIR$/mx_superui/mx_superui.iml" />
     </modules>
   </component>
 </project>

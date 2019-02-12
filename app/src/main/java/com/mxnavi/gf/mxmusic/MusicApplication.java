@@ -3,6 +3,7 @@ package com.mxnavi.gf.mxmusic;
 import android.app.Application;
 import android.content.Intent;
 
+import com.mxnavi.gf.misc.singleton.SingletonManager;
 import com.mxnavi.gf.server.service.MusicService;
 
 /**
@@ -12,11 +13,12 @@ import com.mxnavi.gf.server.service.MusicService;
  * @date 2018.12.03
  */
 
-public class MusicApplication extends Application{
+public class MusicApplication extends Application {
 
     @Override
     public void onCreate() {
         super.onCreate();
+        SingletonManager.init(this);
         startService(new Intent(this, MusicService.class));
     }
 

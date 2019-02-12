@@ -1,1 +1,1 @@
-include ':app', ':mvvm', ':autosize', ':server', ':misc', ':pojo', ':superui'
+include ':app', ':mx_mvvm', ':mx_autosize', ':mx_server', ':mx_misc', ':mx_pojo', ':mx_superui'
